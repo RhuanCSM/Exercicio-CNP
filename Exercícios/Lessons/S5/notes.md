@@ -12,3 +12,6 @@
 ## _Var_ & _Let_ & _Const_
 <!-- 113. var vs let & const - Introducing "Block Scope" -->
 
+**Var**: cria uma variável;
+**Let**: cria uma variável;
+**Const**: cria uma constante;
