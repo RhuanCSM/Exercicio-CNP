@@ -9,5 +9,6 @@
 
 - ES6+ foi criado com melhorias: _const_ e _let_, por exemplo. 
 
-## _Var_ e _Const_
+## _Var_ & _Let_ & _Const_
 <!-- 113. var vs let & const - Introducing "Block Scope" -->
+
