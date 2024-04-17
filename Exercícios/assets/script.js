@@ -4,19 +4,20 @@ alo.addEventListener('click', () => {
     console.log('deu certo')
 })
 
-var name = 'fulano'
+
+const ab = 'teste'
 
 
-if (name === 'fulano') {
-    var hobbies = ['sports', 'cars']
-    console.log(hobbies)
+
+
+if (a === 'teste') {
+    var a = 'a'
 }
 
-const greet = () => {
-    var name = 'asdawd'
+console.log(a)
+
+const funcao = () => {
+    const a = 'teste'
+    // console.log(a)
 }
-var age = 15
-console.log(name, age)
-
-greet()
-
+funcao()
