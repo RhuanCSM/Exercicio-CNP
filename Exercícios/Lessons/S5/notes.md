@@ -13,5 +13,5 @@
 <!-- 113. var vs let & const - Introducing "Block Scope" -->
 
 - ***Var***: cria uma variável; _usado no escopo de function e global_.<br>
-- ***Let***: cria uma variável; _usado no escopo de bloco_<br>
-- ***Const***: cria uma constante; _usado no escopo de bloco_<br>
+- ***Let***: cria uma variável; _usado no escopo de bloco_.<br>
+- ***Const***: cria uma constante; _usado no escopo de bloco_.<br>
