@@ -9,7 +9,6 @@ const ab = 'teste'
 
 
 
-
 if (a === 'teste') {
     var a = 'a'
 }
