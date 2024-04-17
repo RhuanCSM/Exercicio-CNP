@@ -26,5 +26,9 @@
         }
     ```
 
-    É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_. <br>
+    É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_. NÃO HÁ PORQUE USAR 'VAR' NO JAVASCRIPT MODERNO.<br>
     ***OBS: Blocos são marcados por chaves ( {...} ), ex: const exemplo = () => {BLOCO}.***
+
+## Hoisting
+<!-- 114. Understanding "Hoisting" -->
+
