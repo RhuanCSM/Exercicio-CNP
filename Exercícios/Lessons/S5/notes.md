@@ -15,3 +15,5 @@
 - ***Var***: cria uma variável; _usado no escopo de function e global_.<br>
 - ***Let***: cria uma variável; _usado no escopo de bloco_.<br>
 - ***Const***: cria uma constante; _usado no escopo de bloco_.<br>
+
+    O _Var_ redeclara a variável sem anunciar nada, e esse é o problema. Não é a intenção do programador, na maior parte dos casos. Sendo assim, diante de uma redeclaração de variável, é preferível que um erro apareça no console - o que é proporcionado pelo _Let_.
