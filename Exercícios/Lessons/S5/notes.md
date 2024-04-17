@@ -17,3 +17,13 @@
 - ***Const***: cria uma constante; _usado no escopo de bloco_.<br>
 
     O _Var_ redeclara a variável sem anunciar nada, e esse é o problema. Não é a intenção do programador, na maior parte dos casos. Sendo assim, diante de uma redeclaração de variável, é preferível que um erro apareça no console - o que é proporcionado pelo _Let_.
+    
+    Esse não é o único problema: ela se restringe ao escopo _global_ e ao de _function_. Isso significa que, caso o _bloco_ (ex: **if**) não seja _function_ o suficiente, o _Var_ declarado dentro será considerado global. Ex:
+
+    ```js
+        if (tal === 'tal') {
+            var algo = 'sei la' // essa var pode ser usada fora.
+        }
+    ```
+
+    É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_.
