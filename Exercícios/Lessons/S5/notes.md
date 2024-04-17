@@ -33,3 +33,7 @@
 <!-- 114. Understanding "Hoisting" -->
 
 Você precisa declarar a variável antes de começar a usá-la. Não pode declará-la após chamá-la no console.log, por exemplo.
+
+## Strict Mode e organização
+<!-- 115. Strict Mode & Writing Good Code -->
+
