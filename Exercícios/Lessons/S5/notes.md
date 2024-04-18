@@ -75,3 +75,4 @@ O _Garbage Collector_ (V8) checa periodicamente o _Heap_ para encontrar objetos 
 
 
 
+
