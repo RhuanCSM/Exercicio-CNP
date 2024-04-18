@@ -54,7 +54,7 @@ __As consideradas _var_ automáticas são conhecidas como variáveis não declar
 ## Como o código executa
 > 117. Inside the JavaScript Engine - How the Code Executes
 
-**Heap**: alocação de memória e acesso dela. <br>
-**Stack**: comunicação de ```functions``` e ```calls```.
+**Heap**: alocação de memória e acesso dela. É a memória a longo prazo, como os objetos criados, por exemplo. <br>
+**Stack**: comunicação de ```functions``` e ```calls```. É a memória curta, ou seja, só fica a função que está sendo executada. Isso deve ser lembrado na organização do código.
 
 ![alt text](image-1.png)
