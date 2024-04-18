@@ -3,3 +3,5 @@
 ## Recapitulação sobre _functions_
 <sub>124. Recapping Functions Knowledge - What We Know Thus Far</sub>
 
+asdawdadadadasdsa
+
