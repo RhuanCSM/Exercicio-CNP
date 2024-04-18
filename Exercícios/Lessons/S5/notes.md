@@ -20,7 +20,7 @@
 
     O _Var_ redeclara a variável sem anunciar nada, e esse é o problema. Não é a intenção do programador, na maior parte dos casos. Sendo assim, diante de uma redeclaração de variável, é preferível que um erro apareça no console - o que é proporcionado pelo _Let_.
     
-    Esse não é o único problema: ela se restringe ao escopo _global_ e ao de _function_. Isso significa que, caso o _bloco_ (ex: **if**) não seja _function_ o suficiente, o _Var_ declarado dentro será considerado global. Ex:
+    Esse não é o único problema: ela se restringe ao escopo _global_ e ao de _function_. Isso significa que, caso o _bloco_ (ex: **if**) não seja _function_ o suficiente, o _Var_ declarado dentro será considerado global. Ex:a
 
     ```js
         if (tal === 'tal') {
