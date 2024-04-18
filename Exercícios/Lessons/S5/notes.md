@@ -73,6 +73,6 @@ O _Garbage Collector_ (V8) checa periodicamente o _Heap_ para encontrar objetos 
 ## Wrap Up
 > 121. Wrap Up
 
-
+Final do módulo e aviso sobre os próximos.
 
 
