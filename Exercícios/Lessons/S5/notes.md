@@ -1,5 +1,7 @@
 # Notas de aulas
 
+[Udemy](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/learn/lecture/15942570#notes)
+
 ## ES5 vs ES6+
 <!-- 112. ES5 vs ES6+ ("Next Gen JS") - Evolution of JavaScript -->
 
@@ -49,3 +51,5 @@ __As consideradas _var_ automáticas são conhecidas como variáveis não declar
 ## Como um código é _parsed_ e _compiled_
 <!-- 116. How Code is Parsed & Compiled -->
 
+## Como o código executa
+<!-- 117. Inside the JavaScript Engine - How the Code Executes -->
