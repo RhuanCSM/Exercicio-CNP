@@ -53,3 +53,8 @@ __As consideradas _var_ automáticas são conhecidas como variáveis não declar
 
 ## Como o código executa
 > 117. Inside the JavaScript Engine - How the Code Executes
+
+**Heap**: alocação de memória e acesso dela.
+**Stack**: comunicação de ```functions``` e ```calls```.
+
+![alt text](image-1.png)
