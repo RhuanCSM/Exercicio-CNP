@@ -63,6 +63,15 @@ Se escrever isso no começo do documento, irão parar de ser consideradas as _va
 
 ![alt text](image-1.png)
 
-## Coleção de Lixo e administração de memória
+## Coleção de Lixo e gerenciamento de memória
 > 120. Garbage Collection & Memory Management
+
+A memória de _stack_ é limpa automaticamente. Mas a a _heap_?
+
+O _Garbage Collector_ (V8) checa periodicamente o _Heap_ para encontrar objetos não utilizados (sem referência), e então os remove.
+
+## Wrap Up
+> 121. Wrap Up
+
+
 
