@@ -26,7 +26,8 @@
         }
     ```
 
-    É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_. NÃO HÁ PORQUE USAR 'VAR' NO JAVASCRIPT MODERNO.<br>
+    É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_. <br> 
+    NÃO HÁ PORQUE USAR 'VAR' NO JAVASCRIPT MODERNO.<br>
     ***OBS: Blocos são marcados por chaves ( {...} ), ex: const exemplo = () => {BLOCO}.***
 
 ## Hoisting
@@ -36,4 +37,15 @@ Você precisa declarar a variável antes de começar a usá-la. Não pode declar
 
 ## Strict Mode e organização
 <!-- 115. Strict Mode & Writing Good Code -->
+
+Se você declarar um objeto sem ```var, let``` ou ```const```, ele automaticamente será considerado um ```var```.
+
+Se escrever isso no começo do documento, irão parar de ser consideradas as _var_ automáticas:
+```js
+'use strict'
+```
+__As consideradas _var_ automáticas são conhecidas como variáveis não declaradas__.
+
+## Como um código é _parsed_ e _compiled_
+<!-- 116. How Code is Parsed & Compiled -->
 

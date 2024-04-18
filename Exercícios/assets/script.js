@@ -1,3 +1,6 @@
+
+
+
 const alo = document.querySelector('#oi')
 
 alo.addEventListener('click', () => {
@@ -9,11 +12,10 @@ const ab = 'teste'
 
 
 
-if (a === 'teste') {
-    var a = 'a'
+if (ab === 'teste') {
+     a = 'a'
 }
 
-console.log(a)
 
 const funcao = () => {
     const a = 'teste'
