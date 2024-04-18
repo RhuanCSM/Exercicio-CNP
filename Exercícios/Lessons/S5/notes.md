@@ -30,7 +30,9 @@ Esse não é o único problema: ela se restringe ao escopo _global_ e ao de _fun
 
 É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_. <br> 
 NÃO HÁ PORQUE USAR 'VAR' NO JAVASCRIPT MODERNO.<br>
-***OBS: Blocos são marcados por chaves ( {...} ), ex: const exemplo = () => {BLOCO}.***
+
+> [!TIP]
+> Blocos são marcados por chaves ( {...} ), ex: const exemplo = () => {BLOCO}.***
 
 ## Hoisting
 > 114. Understanding "Hoisting"
@@ -46,7 +48,9 @@ Se escrever isso no começo do documento, irão parar de ser consideradas as _va
 ```js
 'use strict'
 ```
-__As consideradas _var_ automáticas são conhecidas como variáveis não declaradas__.
+
+> [!NOTE]
+> __As consideradas _var_ automáticas são conhecidas como variáveis não declaradas__.
 
 ## Como um código é _parsed_ e _compiled_
 > 116. How Code is Parsed & Compiled
