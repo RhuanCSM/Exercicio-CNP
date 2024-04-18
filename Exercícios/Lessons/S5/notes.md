@@ -7,7 +7,7 @@
 
 - ES5 é uma linguagem por trás do JavaScript, conhecido como "ECMA / Script"
 ![print do website](image.png)
-    Já que mudanças na estrutura poderiam danificar os sites que já usavam a linguagem, vem a necessidade de criar novas versões:
+Já que mudanças na estrutura poderiam danificar os sites que já usavam a linguagem, vem a necessidade de criar novas versões:
 
 - ES6+ foi criado com melhorias: _const_ e _let_, por exemplo. 
 
@@ -18,19 +18,19 @@
 - ***Let***: cria uma variável; _usado no escopo de bloco_.<br>
 - ***Const***: cria uma constante; _usado no escopo de bloco_.<br>
 
-    O _Var_ redeclara a variável sem anunciar nada, e esse é o problema. Não é a intenção do programador, na maior parte dos casos. Sendo assim, diante de uma redeclaração de variável, é preferível que um erro apareça no console - o que é proporcionado pelo _Let_.
-    
-    Esse não é o único problema: ela se restringe ao escopo _global_ e ao de _function_. Isso significa que, caso o _bloco_ (ex: **if**) não seja _function_ o suficiente, o _Var_ declarado dentro será considerado global. Ex:
+O _Var_ redeclara a variável sem anunciar nada, e esse é o problema. Não é a intenção do programador, na maior parte dos casos. Sendo assim, diante de uma redeclaração de variável, é preferível que um erro apareça no console - o que é proporcionado pelo _Let_.
 
-    ```js
-        if (tal === 'tal') {
-            var algo = 'sei la' // essa var pode ser usada fora.
-        }
-    ```
+Esse não é o único problema: ela se restringe ao escopo _global_ e ao de _function_. Isso significa que, caso o _bloco_ (ex: **if**) não seja _function_ o suficiente, o _Var_ declarado dentro será considerado global. Ex:
 
-    É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_. <br> 
-    NÃO HÁ PORQUE USAR 'VAR' NO JAVASCRIPT MODERNO.<br>
-    ***OBS: Blocos são marcados por chaves ( {...} ), ex: const exemplo = () => {BLOCO}.***
+```js
+    if (tal === 'tal') {
+        var algo = 'sei la' // essa var pode ser usada fora.
+    }
+```
+
+É por isso que o _Let_ será restringindo a qualquer 'bloco'. Neste caso, ele não seria usado fora do _if_. <br> 
+NÃO HÁ PORQUE USAR 'VAR' NO JAVASCRIPT MODERNO.<br>
+***OBS: Blocos são marcados por chaves ( {...} ), ex: const exemplo = () => {BLOCO}.***
 
 ## Hoisting
 > 114. Understanding "Hoisting"
