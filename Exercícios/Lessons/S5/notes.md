@@ -62,3 +62,7 @@ Se escrever isso no começo do documento, irão parar de ser consideradas as _va
 **Stack**: comunicação de ```functions``` e ```calls```. É a memória curta, ou seja, só fica a função que está sendo executada. Isso deve ser lembrado na organização do código.
 
 ![alt text](image-1.png)
+
+## Coleção de Lixo e administração de memória
+> 120. Garbage Collection & Memory Management
+
