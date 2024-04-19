@@ -34,3 +34,8 @@ oLeandro.éLegal();
 <sub>127. Functions are Objects!</sub>
 
 ```Functions``` também tem ```properties``` como ```objects```, porque ela mesma é um ```object```. Sendo assim, é armazenada no ```Heap``` (armazenamento de longo prazo) e qualquer coisa que é aplicável a um ```object```, também o é para a ```function```.
+
+## Funções em variáveis
+<sub>128. Function Expressions: Storing Functions in Variables</sub>
+
+Uma function dentro de uma variable só pode ser chamada pelo nome da variable.
