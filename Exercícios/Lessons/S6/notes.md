@@ -41,7 +41,7 @@ oLeandro.éLegal();
 Uma ```function``` dentro de uma ```variable``` só pode ser chamada pelo nome da ```variable```. Uma ```function``` fora de uma ```variable``` é uma ```declaration```. Uma ```function``` dentro de uma ```variable``` é apenas uma ```expression```. <br>
 > _Use como exemplo o exemplo da 126_
 
-Também existem as functions anônimas. Enquanto expressions, não precisam de um nome.
+Também existem as ```functions``` anônimas. Enquanto ```expressions```, não precisam de um nome.
 
 ```js
 const leandro = function() {
