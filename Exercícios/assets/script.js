@@ -15,3 +15,5 @@ const oLeandro = {
 };
 
 oLeandro.éLegal();
+
+console.dir(consoleBtn)

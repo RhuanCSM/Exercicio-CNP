@@ -30,4 +30,7 @@ const oLeandro = {
 
 oLeandro.éLegal();
 ```
+## Funções são objetos
+<sub>127. Functions are Objects!</sub>
 
+```Functions``` também tem ```properties``` como ```objects```, porque ela mesma é um ```object```. Sendo assim, é armazenada no ```Heap``` (armazenamento de longo prazo) e qualquer coisa que é aplicável a um ```object```, também o é para a ```function```.
