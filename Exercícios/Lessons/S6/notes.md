@@ -23,7 +23,7 @@ A ```function``` tem bloco individual no código. Contudo, existe a possibilidad
 ```js
 const oLeandro = {
     name: 'Leandro',
-    pôLeandro: function éLegal() {
+    éLegal: function pôLeandro() {
         console.log(', não é?')
     }
 };
