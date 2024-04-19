@@ -38,4 +38,5 @@ oLeandro.éLegal();
 ## Funções em variáveis
 <sub>128. Function Expressions: Storing Functions in Variables</sub>
 
-Uma function dentro de uma variable só pode ser chamada pelo nome da variable.
+Uma ```function``` dentro de uma ```variable``` só pode ser chamada pelo nome da ```variable```. Uma ```function``` fora de uma ```variable``` é uma ```declaration```. Uma ```function``` dentro de uma ```variable``` é apenas uma ```expression```. <br>
+_Use como exemplo o exemplo da 126_
