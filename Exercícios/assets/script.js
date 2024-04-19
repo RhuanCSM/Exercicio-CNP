@@ -1,19 +1,12 @@
 const startGame = document.getElementById('btn')
 
+const getPlayerChoice = function() {
+    const selection = prompt('Rock, Paper or Scissors?', '')
+    if (selection !== 'Rock' && selection !== 'Paper' && selection !== 'Scissors') {
+        
+    }
+}
+
 function consoleBtn() {
     console.log('Game is starting...');
 }
-
-
-startGame.addEventListener('click', consoleBtn)
-
-const oLeandro = {
-    name: 'Leandro',
-    éLegal: function pôLeandro() {
-        console.log(', não é?')
-    }
-};
-
-oLeandro.éLegal();
-
-console.dir(consoleBtn)
