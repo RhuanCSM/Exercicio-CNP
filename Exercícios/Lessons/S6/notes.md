@@ -52,3 +52,10 @@ const leandro = function() {
 ## Expressions vs. Declarations
 <sub>129. Function Expressions vs Function Declarations</sub>
 
+```Declaration/statement```: pode ser usado a partir de todo o documento, até mesmo antes da ```declaration``` - por isso, podemos organizar todas as ```functions``` ao final do arquivo.
+
+```Expression```: é também levado ao topo do documento, mas não inicializado.
+
+## Funções anônimas
+<sub>130. Anonymous Functions</sub>
+
