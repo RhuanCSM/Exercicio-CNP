@@ -65,7 +65,7 @@ const leandersson = () => {};
 
 Você pode querer considerar o uso de ```functions``` nomeadas, porque quando um erro é logado no ```console```, ele dará o nome da ```function``` declarada que contém o erro. No caso de uma anônima, dirá apenas ```<anonimous>```. Contudo, os erros também apontam a linha do código.
 
-## Trabalhando no projeto "Game", do curso
+## Trabalhando no projeto "Pedra, papel e tesoura", do curso
 <sub>131. Working on the Project: Adding User Choices to the Game</sub>
 
 
