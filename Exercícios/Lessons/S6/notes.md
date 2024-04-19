@@ -52,10 +52,15 @@ const leandro = function() {
 ## Expressions vs. Declarations
 <sub>129. Function Expressions vs Function Declarations</sub>
 
-```Declaration/statement```: pode ser usado a partir de todo o documento, até mesmo antes da ```declaration``` - por isso, podemos organizar todas as ```functions``` ao final do arquivo.
+```Declaration/statement```: pode ser usado a partir de todo o documento, até mesmo antes da ```declaration``` – por isso, podemos organizar todas as ```functions``` ao final do arquivo.
 
 ```Expression```: é também levado ao topo do documento, mas não inicializado.
 
 ## Funções anônimas
 <sub>130. Anonymous Functions</sub>
 
+```js
+const leandersson = () => {};
+```
+
+Você pode querer considerar o uso de ```functions``` nomeadas, porque quando um erro é logado no ```console```, ele dará o nome da ```function``` declarada que contém o erro. No caso de uma anônima, dirá apenas ```<anonimous>```. Contudo, os erros também apontam a linha do código.
