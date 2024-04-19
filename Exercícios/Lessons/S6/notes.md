@@ -18,5 +18,16 @@ Nota no 125:
 ## Funções e Métodos
 <sub>126. Functions vs Methods</sub>
 
+A ```function``` tem bloco individual no código. Contudo, existe a possibilidade de guardar ```functions``` dentro de ```objects```, no lugar das ```properties```. Estes são os ```Methods```: ```functions``` dentro de ```objects```. Exemplo:
 
+```js
+const oLeandro = {
+    name: 'Leandro',
+    pôLeandro: function éLegal() {
+        console.log(', não é?')
+    }
+};
+
+oLeandro.éLegal();
+```
 
