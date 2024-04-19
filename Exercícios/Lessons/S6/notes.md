@@ -48,3 +48,7 @@ const leandro = function() {
     console.log('é legal')
 };
 ```
+
+## Expressions vs. Declarations
+<sub>129. Function Expressions vs Function Declarations</sub>
+
