@@ -1,25 +1,3 @@
-const movieList = document.getElementById('movie-list');
+const addMovieBtn = document.getElementById('add-movie-btn');
+const searchBtn = document.getElementById('search-btn');
 
-movieList.style['background-color'] = 'red';
-movieList.style['display'] = 'block';
-
-const userChosenKeyName = 'level';
-
-let person = {
-    'first name': 'Max',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    Greet: () => {
-        alert('Hi there!');
-    },
-    1.5: 'Hello',
-};
-
-// person.age = 31;
-// delete person.age;
-// person.age = undefined;
-
-console.log(person['age'])
-console.log(person[1.5])
-
-person.isAdmin = true;
