@@ -34,4 +34,6 @@ No Javascript temos os **valores primitivos** e os **valores de referência**, q
 ## Acesso às propriedades
 <sub>219. Dynamic Property Access & Setting Properties Dynamically</sub>
 
-Posso acessar a ```property``` do ```object``` não apenas com a ```string``` (```exemplo['Oi Leandro']```), mas também com uma ```variable``` de valor igual ao nome da ```property``` (```exemplo[objComOiLeandro]```).
+Posso acessar a ```property``` do ```object``` não apenas com a ```string``` (```js
+exemplo['Oi Leandro']```), mas também com uma 
+```variable``` de valor igual ao nome da ```property``` (```exemplo[objComOiLeandro]```).
