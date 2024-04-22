@@ -19,3 +19,9 @@ No Javascript temos os **valores primitivos** e os **valores de referência**, q
 – **Primitive**: ```boolean```, ```numbers```, ```strings``` etc. <br>
 – **Reference**: Qualquer outra coisa. "{...}", Arrays, Nodes etc. 
 
+## Adicionando, deletando e modificando propriedades
+<sub>216. Adding, Modifying & Deleting Properties</sub>
+
+## Caracteres especiais
+<sub>217. Special Key Names & Square Bracket Property Access</sub>
+
