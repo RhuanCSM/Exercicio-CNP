@@ -141,3 +141,6 @@ startGameBtn.addEventListener('click', () => {
 ## As setinhas
 <sub>133. Introducing Arrow Functions</sub>
 
+() => {}
+
+É uma ```anonimous function```. Além disso, permite a retirada de ```()``` quando houver apenas um parâmetro/argumento e a retirada de ```{}``` e ```return``` quando houver apenas uma expressão.
