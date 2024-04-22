@@ -144,3 +144,7 @@ startGameBtn.addEventListener('click', () => {
 () => {}
 
 É uma ```anonimous function```. Além disso, permite a retirada de ```()``` quando houver apenas um parâmetro/argumento e a retirada de ```{}``` e ```return``` quando houver apenas uma expressão.
+
+## Mais do jogo: mensagens para o usuário
+<sub>135. Outputting Messages to the User</sub>
+
