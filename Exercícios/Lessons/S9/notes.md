@@ -30,3 +30,8 @@ No Javascript temos os **valores primitivos** e os **valores de referência**, q
 
 > [!NOTE]
 > Se você tiver um ```object``` e chamá-lo, as ```properties``` manterão a ordem da criação. Contudo, se os nomes das ```properties``` forem ```numbers```, a ordem se ajustará para ordem crescente.
+
+## Acesso às propriedades
+<sub>219. Dynamic Property Access & Setting Properties Dynamically</sub>
+
+Posso acessar a ```property``` do ```object``` não apenas com a ```string``` (```exemplo['Oi Leandro']```), mas também com uma ```variable``` de valor igual ao nome da ```property``` (```exemplo[objComOiLeandro]```).
