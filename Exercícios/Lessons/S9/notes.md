@@ -7,7 +7,9 @@
 Tudo é um ```object```. Eles são ```core data structures``` – a estrutura dos dados principais do documento. 
 
 – Típicamente refletem em entidades do **mundo real** (um botão, um filme, um carro por exemplo). <br>
-– Isso se dá pela liberdade na criação do nome do ```object```, permitindo que tragamos a lógica do mundo real para a computação.
+– Isso se dá pela liberdade na criação do nome do ```object```, permitindo que tragamos a lógica do mundo real para a computação. <br>
+– São feitos de ```methods``` e ```properties```. Armazenam ```data``` em ```properties``` e ```actions``` em ```methods```.
 
 > [!TIP]
 > ```Properties``` são ```variables``` em ```objects```. <br>```Methods``` são ```functions``` em ```objects```.
+
