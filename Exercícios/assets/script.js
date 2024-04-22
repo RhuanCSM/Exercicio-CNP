@@ -3,6 +3,8 @@ const movieList = document.getElementById('movie-list');
 movieList.style['background-color'] = 'red';
 movieList.style['display'] = 'block';
 
+const userChosenKeyName = 'level';
+
 let person = {
     'first name': 'Max',
     age: 30,

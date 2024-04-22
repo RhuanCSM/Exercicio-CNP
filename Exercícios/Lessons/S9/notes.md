@@ -36,3 +36,16 @@ No Javascript temos os **valores primitivos** e os **valores de referência**, q
 
 Posso acessar a ```property``` do ```object``` não apenas com a ```string``` (```exemplo['Oi Leandro'```), mas também com uma 
 ```variable``` de valor igual ao nome da ```property``` (```exemplo[objComOiLeandro]```).
+
+Você também pode usar os colchetes [] para setar a ```property``` de um ```object``` com uma ```variable```, sendo o valor dela o nome da ```property```. Ex:
+
+```js
+const eai = 'Leandro';
+const leandersson = {
+  [eai]: 'Leandro', 
+  // Aqui o exemplo. O nome não é 'eai', mas 'Leandro'.
+  tudo: 'bem',
+  'contigo': '?' 
+}
+```
+
