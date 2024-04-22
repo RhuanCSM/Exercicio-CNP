@@ -154,3 +154,9 @@ startGameBtn.addEventListener('click', () => {
     gameIsRunning = false;
 })
 ```
+
+## Argumentos padrões em funções
+<sub>136. Default Arguments in Functions</sub>
+
+<sub>137. Introducing Rest Parameters ("Rest Operator")</sub>
+
