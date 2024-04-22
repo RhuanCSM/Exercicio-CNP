@@ -42,10 +42,15 @@ Você também pode usar os colchetes [] para setar a ```property``` de um ```obj
 ```js
 const eai = 'Leandro';
 const leandersson = {
-  [eai]: 'Leandro', 
+  [eai]: 'Leandersson', 
   // Aqui o exemplo. O nome não é 'eai', mas 'Leandro'.
   tudo: 'bem',
   'contigo': '?' 
 }
 ```
+
+## Trabalho de teste
+<sub>220. Demo App & Shorthand Property Syntax</sub>
+
+
 
