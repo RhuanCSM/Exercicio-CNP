@@ -10,4 +10,4 @@ Tudo é um ```object```. Eles são ```core data structures``` – a estrutura do
 – Isso se dá pela liberdade na criação do nome do ```object```, permitindo que tragamos a lógica do mundo real para a computação.
 
 > [!TIP]
-> ```Properties``` são ```variables``` em ```objects```. Methods são ```functions``` em ```objects```.
+> ```Properties``` são ```variables``` em ```objects```. <br>```Methods``` são ```functions``` em ```objects```.
