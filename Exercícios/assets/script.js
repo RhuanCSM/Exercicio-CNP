@@ -9,7 +9,8 @@ let person = {
     hobbies: ['Sports', 'Cooking'],
     Greet: () => {
         alert('Hi there!');
-    }
+    },
+    1.5: 'Hello',
 };
 
 // person.age = 31;
@@ -17,5 +18,6 @@ let person = {
 // person.age = undefined;
 
 console.log(person['age'])
+console.log(person[1.5])
 
 person.isAdmin = true;

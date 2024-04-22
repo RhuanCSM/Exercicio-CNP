@@ -25,3 +25,8 @@ No Javascript temos os **valores primitivos** e os **valores de referência**, q
 ## Caracteres especiais
 <sub>217. Special Key Names & Square Bracket Property Access</sub>
 
+## Tipos e ordem de propriedades
+<sub>218. Property Types & Property Order</sub>
+
+> [!NOTE]
+> Se você tiver um ```object``` e chamá-lo, as ```properties``` manterão a ordem da criação. Contudo, se os nomes das ```properties``` forem ```numbers```, a ordem se ajustará para ordem crescente.
