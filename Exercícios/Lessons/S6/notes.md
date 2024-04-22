@@ -68,4 +68,9 @@ Você pode querer considerar o uso de ```functions``` nomeadas, porque quando um
 ## Trabalhando no projeto "Pedra, papel e tesoura", do curso
 <sub>131. Working on the Project: Adding User Choices to the Game</sub>
 
+Melhor trabalhado no script.js
+
+## Lógica do jogo
+<sub>132. Implementing the Core Game Logic</sub>
+
 
