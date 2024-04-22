@@ -75,6 +75,20 @@ Melhor trabalhado no script.js
 
 ### Pedra, papel ou tesoura:
 
+**Código completo abaixo.**
+
+## As setinhas
+<sub>133. Introducing Arrow Functions</sub>
+
+() => {}
+
+É uma ```anonimous function```. Além disso, permite a retirada de ```()``` quando houver apenas um parâmetro/argumento e a retirada de ```{}``` e ```return``` quando houver apenas uma expressão.
+
+## Mais do jogo: mensagens para o usuário
+<sub>135. Outputting Messages to the User</sub>
+
+Jogo completo:
+
 ```js
 const startGameBtn = document.getElementById('btn');
 const ROCK = 'ROCK';
@@ -87,7 +101,7 @@ const RESULT_COMPUTER_WINS = 'COMPUTER_WINS!';
 
 let gameIsRunning = false;
 
-const getPlayerChoice = function() {
+const getPlayerChoice = () => {
     const selection = prompt(`${ROCK}, ${PAPER} or ${SCISSORS}?`, '').toUpperCase();
     if (
         selection !== ROCK && 
@@ -111,19 +125,14 @@ const getComputerChoice = () => {
     }
 }
 
-const getWinner = (pChoice, cChoice) => {
-    if (cChoice === pChoice) {
-        return RESULT_DRAW;
-    } else if (
+const getWinner = (cChoice, pChoice) => 
+    cChoice === pChoice ? 
+    RESULT_DRAW : 
     cChoice === ROCK && pChoice === PAPER ||
     cChoice === PAPER && pChoice === SCISSORS ||
-    cChoice === SCISSORS && pChoice === ROCK
-    ) {
-        return RESULT_PLAYER_WINS
-    } else {
-        return RESULT_COMPUTER_WINS
-    }
-} 
+    cChoice === SCISSORS && pChoice === ROCK ? 
+    RESULT_PLAYER_WINS :
+    RESULT_COMPUTER_WINS;
 
 startGameBtn.addEventListener('click', () => {
     if (gameIsRunning) {
@@ -134,17 +143,14 @@ startGameBtn.addEventListener('click', () => {
     const playerChoice = getPlayerChoice();
     const computerChoice = getComputerChoice();
     const winner = getWinner(computerChoice, playerChoice);
-    console.log(winner);
+    let message =  `You choose ${playerChoice} and the computer choose ${computerChoice}, therefore `;
+    winner === RESULT_DRAW ? 
+    message = message + `you had a draw.` :
+    winner === RESULT_PLAYER_WINS ? 
+    message = message + `you won.` :
+    winner === RESULT_COMPUTER_WINS ?
+    message = message + `the computer won.` : '';
+    alert(message);
+    gameIsRunning = false;
 })
 ```
-
-## As setinhas
-<sub>133. Introducing Arrow Functions</sub>
-
-() => {}
-
-É uma ```anonimous function```. Além disso, permite a retirada de ```()``` quando houver apenas um parâmetro/argumento e a retirada de ```{}``` e ```return``` quando houver apenas uma expressão.
-
-## Mais do jogo: mensagens para o usuário
-<sub>135. Outputting Messages to the User</sub>
-
