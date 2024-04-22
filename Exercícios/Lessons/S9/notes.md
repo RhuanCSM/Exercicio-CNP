@@ -18,3 +18,4 @@ No Javascript temos os **valores primitivos** e os **valores de referência**, q
 
 – **Primitive**: ```boolean```, ```numbers```, ```strings``` etc. <br>
 – **Reference**: Qualquer outra coisa. "{...}", Arrays, Nodes etc.
+
