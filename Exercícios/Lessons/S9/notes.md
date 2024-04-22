@@ -17,5 +17,5 @@ Tudo é um ```object```. Eles são ```core data structures``` – a estrutura do
 No Javascript temos os **valores primitivos** e os **valores de referência**, que são ```objects```.
 
 – **Primitive**: ```boolean```, ```numbers```, ```strings``` etc. <br>
-– **Reference**: Qualquer outra coisa. "{...}", Arrays, Nodes etc.
+– **Reference**: Qualquer outra coisa. "{...}", Arrays, Nodes etc. 
 
