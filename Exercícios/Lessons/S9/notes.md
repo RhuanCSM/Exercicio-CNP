@@ -52,15 +52,37 @@ const leandersson = {
 ## Trabalho de teste
 <sub>220. Demo App & Shorthand Property Syntax</sub>
 
+.
+.
+.
+
+## Encadeamento de propriedade e método
+<sub>224. Understanding "Chaining" (Property & Method Chaining)</sub>
+
+Simplesmente o meio de acessar ```properties``` e ```methods``` numa única linha:
+
+```example.info.title / Math.random()```
 
 
+## Espalhar objeto
+<sub>225. The Object Spread Operator (...)</sub>
 
+{...} – Esse ```operator``` copia os ```values``` de um ```object``` em outro. Ex:
 
+```js
+const person = {name: 'Leandro', age: 30, hobbies: ['Sports', 'Cars']};
 
+const newPerson = {...person};
+```
 
+Os ```values``` do ```object``` antigo são copiados, mas os ```objects``` dentro ainda fazem referência. Ou seja, se mudar uma ```array``` no antigo, ainda mudará a do novo. <br>
+Para corrigir isso, precisamos reescrever as ```properties``` no ```Spread Operator```, assim:
+```js
+const newPerson = {...person, age: 29, hobbies: [...person.hobbies]};
+```
 
-
-
+## assign()
+<sub>226. Understanding Object.assign()</sub>
 
 
 
@@ -81,47 +103,64 @@ const addMovieBtn = document.getElementById("add-movie-btn");
 const searchBtn = document.getElementById("search-btn");
 const movies = [];
 
-const renderMovies = () => {
-    const movieList = document.getElementById('movie-list');
-   if (movies.lenght === 0) { 
-    movieList.classList.remove('visible')
-    return;
-    } else {
-    movieList.classList.add('visible')
-    } 
-    movieList.innerHTML = '';
+const renderMovies = (filter = '') => {
+	const movieList = document.getElementById("movie-list");
+	if (movies.lenght === 0) {
+		movieList.classList.remove("visible");
+		return;
+	} else {
+		movieList.classList.add("visible");
+	}
+	movieList.innerHTML = "";
 
-    movies.forEach((movie) => {
-        const movieEl = document.createElement('li');
-        movieEl.textContent = movie.info.title;
-        movieList.append(movieEl);
-    })
-}    
+  const filteredMovies = 
+    !filter ? 
+    movies : 
+    movies.filter(movie => movie.info.title.includes(filter));
+
+    filteredMovies.forEach((movie) => {
+		const movieEl = document.createElement("li");
+		let text = movie.info.title + " – ";
+		for (const key in movie.info) {
+			if (key !== "title") {
+        text = text + `${key}: ${movie.info[key]}`
+			}
+		}
+    movieEl.textContent = text;
+		movieList.append(movieEl);
+	});
+};
 
 const addMovieHandler = () => {
-    const title = document.getElementById("title").value;
+	const title = document.getElementById("title").value;
 	const extraName = document.getElementById("extra-name").value;
 	const extraValue = document.getElementById("extra-value").value;
 	if (
-        title.trim() === "" ||
+		title.trim() === "" ||
 		extraName.trim() === "" ||
 		extraValue.trim() === ""
-        ) {
-            return;
-        }
-        const newMovie = {
-            info: {
-                title,
-                [extraName]: extraValue,
-            },
-            id: Math.random(),
-        };
-        
-        movies.push(newMovie);
-        renderMovies();
-    };
+	) {
+		return;
+	}
+	const newMovie = {
+		info: {
+			title,
+			[extraName]: extraValue,
+		},
+		id: Math.random(),
+	};
 
-    addMovieBtn.addEventListener('click', addMovieHandler);
+	movies.push(newMovie);
+	renderMovies();
+};
+
+const searchMovieHandler = () => {
+  const filterTerm = document.getElementById('filter-title').value;
+  renderMovies(filterTerm);
+};
+
+addMovieBtn.addEventListener("click", addMovieHandler);
+searchBtn.addEventListener("click", searchMovieHandler);
 ```
 
 
