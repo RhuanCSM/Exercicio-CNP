@@ -135,8 +135,20 @@ const {title: tarefa} = info // agora 'title' será chamado como 'tarefa no cód
 tarefa = 'Rhuan';
 ```
 
+## Checando a existência de um objeto
+<sub>228. Checking for Property Existance</sub>
 
+Você pode checar se uma ```property``` existe em um object, caso não saiba, por ```if (in)```. Ex:
 
+```js
+if ('info' in movie) { // Se tiver a property 'info' em 'movie'
+
+}
+// ou
+if (!('info'in movie)) { // Checar em falso
+
+}
+```
 
 
 ## Projeto da vez:
