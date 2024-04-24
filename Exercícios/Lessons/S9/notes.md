@@ -167,10 +167,12 @@ Você pode corrigir isso adicionando ```.bind()``` na ```function```, e especifi
 ## .this e arrow functions
 <sub>234. "this" and Arrow Functions</sub>
 
-Em padrão, o ```browser``` seta o ```this``` no ```element``` do ```DOM```, caso você tenha usado um ```EventListener```, por exemplo. No entanto, é diferente com ```arrow function``` ( ```() => {};``` )
+Em padrão, o ```browser``` seta o ```this``` no ```element``` do ```DOM```, caso você tenha usado um ```EventListener```, por exemplo. No entanto, é diferente com ```arrow function``` ( ```() => {};``` ).<br>
+<br>
+A ```arrow function``` força o ```this``` a se referir ao elemento global padrão: ```window```.
 
 
-
+<hr>
 
 ## Projeto da vez:
 
