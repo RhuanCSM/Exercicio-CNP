@@ -15,14 +15,14 @@ const renderMovies = (filter = '') => {
   const filteredMovies = 
     !filter ? 
     movies : 
-    movies.filter(movie => movie.info.title.includes(filter));
-
+    movies.filter(movie => movie.info.title.includes(filter)); // Método de filtragem para pesquisa
     filteredMovies.forEach((movie) => {
 		const movieEl = document.createElement("li");
-		let text = movie.info.title + " – ";
-		for (const key in movie.info) {
+    const {info} = movie; // Object destructuring
+		let text = info.title + " – ";
+		for (const key in info) {
 			if (key !== "title") {
-        text = text + `${key}: ${movie.info[key]}`
+        text = text + `${key}: ${info[key]}`
 			}
 		}
     movieEl.textContent = text;
@@ -35,7 +35,7 @@ const addMovieHandler = () => {
 	const extraName = document.getElementById("extra-name").value;
 	const extraValue = document.getElementById("extra-value").value;
 	if (
-		title.trim() === "" ||
+		title.trim() === "" || // Trim takes out the spaces
 		extraName.trim() === "" ||
 		extraValue.trim() === ""
 	) {
