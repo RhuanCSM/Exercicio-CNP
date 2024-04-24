@@ -154,7 +154,7 @@ if (!('info'in movie)) { // Checar em falso
 ## Detalhes do .this
 <sub>231. The "this" Keyword And Its Strange Behavior</sub>
 
-O ```.this``` se refere ao ```object``` que o chamou. Caso ele esteja numa ```function```, ele funcionará do mesmo modo. Logo, ao chamar a ```function``` com ```.this```, deve estar bem claro quem a chamou, para que o ```.this``` não se refira a ```Window``` e retorne ```undefined```.
+O ```.this``` se refere ao ```object``` que o chamou. Caso ele esteja numa ```function```, ele funcionará do mesmo modo. Logo, ao chamar a ```function``` que contém ```.this```, deve estar bem claro quem a chamou, para que o ```.this``` não se refira a ```Window``` e retorne ```undefined```.
 
 
 
