@@ -159,7 +159,8 @@ O ```.this``` se refere ao ```object``` que o chamou. Caso ele esteja numa ```fu
 <br>
 Você pode corrigir isso adicionando ```.bind()``` na ```function```, e especificando como ```parameter``` o ```object``` que se refere.
 
-
+## call() e apply()
+<sub>232</sub>
 
 
 
