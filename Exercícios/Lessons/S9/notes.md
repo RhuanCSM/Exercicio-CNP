@@ -81,14 +81,30 @@ Para corrigir isso, precisamos reescrever as ```properties``` no ```Spread Opera
 const newPerson = {...person, age: 29, hobbies: [...person.hobbies]};
 ```
 
-## assign()
+## Object.assign()
 <sub>226. Understanding Object.assign()</sub>
 
+Basicamente, é a mesma coisa que o ```Spread``` ({...}). 
 
+```js
+const person = {name: 'Rhuan', hobbies: ['Sports', 'Dance']}
+const person2 = Object.assign({}, person) // assim você cria outro objeto e atribui as propriedades do citado no novo.
+```
 
+Contudo, é conselhado usar ainda o {...}, pelo tamanho do código.
 
+## Desestruturação de objeto
+<sub>227. Object Destructuring</sub>
 
+É uma maneira de citar a ```property``` de um ```object``` sem ter que fazer o ```chaining``` com pontos, não estendendo tanto o código. Exemplo:
 
+```js
+movie.info.title = 'Olá';
+
+const {info} = movie; // Quando eu citar a propertie, será considerado o object relacionado. Por isso é bom declarar apenas dentro de funções etc.
+
+info.title = 'Leandro'; // sem 'movie.'
+```
 
 
 
