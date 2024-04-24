@@ -106,7 +106,34 @@ const {info} = movie; // Quando eu citar a propertie, será considerado o object
 info.title = 'Leandro'; // sem 'movie.'
 ```
 
+Você ainda pode usar o ```spread``` para coletar as outras ```properties``` que você não citou o nome, apenas o colocando com qualquer nome como ```parameter```. Ex:
 
+```js
+const movie = {
+  info: 'Olá',
+  id: Math.random()
+};
+
+const {info, ...otherProperties} = movie;
+// otherProperties seria o 'id'
+```
+
+Também posso acessar a ```property``` de um ```object```, bem como dar novo nome. Ex:
+
+```js
+const movie = {
+  info: {
+    title: 'Leandro',
+    tipo: 'Teste'
+  },
+  id: Math.random()
+};
+
+const {info} = movie; // acessando a property de movie
+const {title} = info;// acessando a property da property de movie
+const {title: tarefa} = info // agora 'title' será chamado como 'tarefa no código.'
+tarefa = 'Rhuan';
+```
 
 
 
@@ -132,14 +159,14 @@ const renderMovies = (filter = '') => {
   const filteredMovies = 
     !filter ? 
     movies : 
-    movies.filter(movie => movie.info.title.includes(filter));
-
+    movies.filter(movie => movie.info.title.includes(filter)); // Método de filtragem para pesquisa
     filteredMovies.forEach((movie) => {
 		const movieEl = document.createElement("li");
-		let text = movie.info.title + " – ";
-		for (const key in movie.info) {
+    const {info} = movie; // Object destructuring
+		let text = info.title + " – ";
+		for (const key in info) {
 			if (key !== "title") {
-        text = text + `${key}: ${movie.info[key]}`
+        text = text + `${key}: ${info[key]}`
 			}
 		}
     movieEl.textContent = text;
@@ -152,7 +179,7 @@ const addMovieHandler = () => {
 	const extraName = document.getElementById("extra-name").value;
 	const extraValue = document.getElementById("extra-value").value;
 	if (
-		title.trim() === "" ||
+		title.trim() === "" || // Trim takes out the spaces
 		extraName.trim() === "" ||
 		extraValue.trim() === ""
 	) {

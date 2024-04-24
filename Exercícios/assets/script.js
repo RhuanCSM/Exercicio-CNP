@@ -19,7 +19,8 @@ const renderMovies = (filter = '') => {
     filteredMovies.forEach((movie) => {
 		const movieEl = document.createElement("li");
     const {info} = movie; // Object destructuring
-		let text = info.title + " – ";
+    const {title: movieTitle} = info; // Puxando property da info e mudando o nome.
+		let text = movieTitle + " – "; // movieTitle = movie.info.title
 		for (const key in info) {
 			if (key !== "title") {
         text = text + `${key}: ${info[key]}`
