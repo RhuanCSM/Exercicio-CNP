@@ -162,9 +162,9 @@ Você pode corrigir isso adicionando ```.bind()``` na ```function```, e especifi
 ## call() e apply()
 <sub>232</sub>
 
-```call()``` é um substituto melhor de ```bind()```. Ele executa diretamente a ```function``` e ainda especificando o que ```this``` se refere. ```apply()``` é igual, mas permite adicionar mais ```values``` como ```arguments```, em forma de ```array```. Ex: ```.apply(movie, [...])```
-
-
+```call()``` é um substituto melhor de ```bind()```. Ele executa diretamente a ```function``` e ainda especificando o que ```this``` se refere. ```apply()``` é igual, mas permite adicionar mais ```values``` como ```arguments```, em forma de ```array```. Ex: ```.apply(movie, [...])```<br>
+<br>
+Em padrão, o ```browser``` seta o ```this``` no ```element``` do ```DOM```, caso você tenha usado um ```EventListener```, por exemplo. No entanto, é diferente com ```arrow function``` ( ```() => {};``` )
 
 
 
