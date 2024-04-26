@@ -176,6 +176,137 @@ A ```arrow function``` força o ```this``` a se referir ao elemento global padr�
 
 ## Projeto da vez:
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Working with Objects</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section id="user-input" class="card">
+      <div class="control">
+        <label for="title">Favorite Movie</label>
+        <input type="text" id="title" />
+      </div>
+      <div class="inline-controls">
+        <div class="control">
+          <label for="extra-name">Extra Information (Name)</label>
+          <input type="text" id="extra-name" />
+        </div>
+        <div class="control">
+          <label for="extra-value">Extra Information (Value)</label>
+          <input type="text" id="extra-value" />
+        </div>
+      </div>
+      <button id="add-movie-btn">Add Movie</button>
+    </section>
+    <section id="filter" class="card">
+      <label for="filter-title">Filter by Title</label>
+      <input type="text" id="filter-title" />
+      <button id="search-btn">Search</button>
+    </section>
+    <ul id="movie-list" class="card"></ul>
+  </body>
+</html>
+```
+```css
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  color: #494949;
+}
+
+input {
+  font: inherit;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #494949;
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff0062;
+}
+
+button {
+  font: inherit;
+  border: 1px solid #ff0062;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background: #ff0062;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #ff3482;
+  border-color: #ff3482;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.inline-controls {
+  display: flex;
+}
+
+.control {
+  margin: 1rem;
+}
+
+#user-input,
+#movie-list,
+#filter {
+  width: 50rem;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+#movie-list {
+  display: none;
+  list-style: none;
+  padding: 1rem;
+}
+
+#movie-list.visible {
+  display: block;
+}
+
+#movie-list li {
+  margin: 1rem;
+  color: #ff0062;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+```
 ```js
 const addMovieBtn = document.getElementById("add-movie-btn");
 const searchBtn = document.getElementById("search-btn");
@@ -198,7 +329,8 @@ const renderMovies = (filter = '') => {
     filteredMovies.forEach((movie) => {
 		const movieEl = document.createElement("li");
     const {info} = movie; // Object destructuring
-		let text = info.title + " – ";
+    const {title: movieTitle} = info; // Puxando property da info e mudando o nome.
+		let text = movieTitle + " – "; // movieTitle = movie.info.title
 		for (const key in info) {
 			if (key !== "title") {
         text = text + `${key}: ${info[key]}`
@@ -238,6 +370,9 @@ const searchMovieHandler = () => {
 };
 
 addMovieBtn.addEventListener("click", addMovieHandler);
+addMovieBtn.addEventListener('keydown', (Enter) => {
+	addMovieHandler();
+})
 searchBtn.addEventListener("click", searchMovieHandler);
 ```
 
