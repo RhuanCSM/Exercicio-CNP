@@ -1,19 +1,15 @@
 class Product {
-  title = 'DEFAULT';
-  imageUrl;
-  description;
-  price; 
 
-  constructor(title, imageUrl, desc, price) {
+  constructor(title, image, desc, price) {
     this.title = title;
-    this.imageUrl = imageUrl;
-    this.desc = desc;
+    this.imageUrl = image;
+    this.description = desc;
     this.price = price;
   };
 }
 
-const productsList = {
-  products: [
+class ProductList {
+  products = [
     new Product(
       'A pillow',
       'https://www.coyuchi.com/cdn/shop/files/ACC-Dec_LostCoastOrganic_PillowCover_Redwood_A_FA23_16377_1.jpg?v=1695925578',
@@ -26,7 +22,10 @@ const productsList = {
       89.99,
       'A carpet which you might like – or not.'
     )
-  ],
+  ];
+
+  constructor() {};
+
   render() {
     const renderHook = document.getElementById('app');
     const prodList = document.createElement('ul');
@@ -51,4 +50,5 @@ const productsList = {
   }
 }
 
-productsList.render();
+const productList = new ProductList();
+productList.render();
