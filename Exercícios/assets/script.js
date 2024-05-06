@@ -26,6 +26,7 @@ class ProductItem {
         </div>
       </div>
     `;
+    const addCartButton = document.querySelector('button');
     return prodEl;
   }
 }
