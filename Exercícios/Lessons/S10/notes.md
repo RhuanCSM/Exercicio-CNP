@@ -2,6 +2,11 @@
 
 ## Aulas sobre Object Oriented Programing. Projeto
 
+## Classes! 
+<sub>242. Defining & Using a First Class</sub>
+
+As Classes são chamadas de _blueprints_ dos objetos. Em tese, é um objeto que engloba os outros. A consequência disso é a herança dos métodos.
+
 
 ```html
 <!DOCTYPE html>
